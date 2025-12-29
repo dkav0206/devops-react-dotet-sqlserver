@@ -1,0 +1,17 @@
+version: "3"
+services:
+  hospital_api:
+    container_name: hospital_api
+    build:
+      context: ./hopital_BE/Hospital_API
+      dockerfile: Dockerfile
+    ports:
+      - "5000:8080"
+
+  hospital_fe:
+    container_name: hospital_fe
+    build:
+      context: ./hospital_FE
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
