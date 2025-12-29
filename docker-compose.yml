@@ -14,4 +14,4 @@ services:
       context: ./hospital_FE
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "3000:80"
